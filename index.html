@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+       <script src="js/calculate.js"></script>
+       <style>
+           #display {
+               font-size: 3rem;
+           }
+       </style>
+</head>
+<body> 
+     <div class="container-fluid my-5">
+        <div class="row text-center">
+            <div class="col-10">
+                <div class="bg-dark text-white my-3 py-4" id="display">0</div>
+            </div>
+            <div class="col-2">
+                <div class="bg-secondary text-white my-3 py-5" id="secondaryDisplay">0</div>
+            </div>
+        </div>
+        <div class="row text-center">
+             <div class="col-4">
+                <button id="zero" class="btn btn-info btn-block"  onclick="updateDisplay(0)">0</button>
+                <button id="one" class="btn btn-info btn-block" onclick="updateDisplay(1)">1</button>
+                <button id="two" class="btn btn-info btn-block" onclick="updateDisplay(2)">2</button>
+                  <a id="clear" class="btn btn-warning btn-block" onclick="clearDisplay()">Clear</a>     
+            </div>
+            <div class="col-4">
+                <button id="three" class="btn btn-info btn-block" onclick="updateDisplay(3)">3</button>
+                <button id="four" class="btn btn-info btn-block" onclick="updateDisplay(4)">4</button>
+                <button id="five" class="btn btn-info btn-block" onclick="updateDisplay(5)">5</button>
+                <button id="equals" class="btn btn-dark btn-block" onclick="updateDisplay('equals')">=</button>
+            </div>
+            <div class="col-4">
+                <button id="six" class="btn btn-info btn-block" onclick="updateDisplay(6)">6</button>
+                <button id="seven" class="btn btn-info btn-block" onclick="updateDisplay(7)">7</button>
+                <button id="eight" class="btn btn-info btn-block" onclick="updateDisplay(8)">8</button>
+                <button id="nine" class="btn btn-info btn-block" onclick="updateDisplay(9)">9</button>
+            </div>
+        </div>
+
+         <div class="row text-center py-3">
+              <div class="col">
+                <button class="btn btn-block btn-primary" id="add"  onclick="updateDisplay('add')">+</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-block btn-primary" id="subtract"  onclick="updateDisplay('subtract')">-</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-primary" id="divide"  onclick="updateDisplay('divide')">/</button>  
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-primary" id="multiply"  onclick="updateDisplay('multiply')">*</button>   
+            </div>
+            <div class="col">
+                <a id="decimal" class="btn btn-block btn-success text-white"  onclick="updateDisplay('decimal')">.</a>
+            </div>
+            <div class="col">
+                <a id="negative-value" class="btn btn-block btn-success text-white"   onclick="updateDisplay('negative-value')">+/-</a>
+            </div>
+         </div>
+         <div class="row text-center">
+            <div class="col float-left bg-primary">
+               <h1>Akjol's Calculator</h1>
+          </div>
+        </div>
+      </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
